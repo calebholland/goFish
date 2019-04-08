@@ -6,6 +6,8 @@
 
 using namespace std;
 
+void dealHand(Deck &d, Player &p, int numCards);
+
 int main() {
     std::cout << "Hello, World!" << std::endl;
 
@@ -38,15 +40,43 @@ int main() {
 
 
 
+    int numCards = 7;
+
+    Player p1("Joe");
+    Player p2("Jane");
+
+    Deck d;  //create a deck of cards
+    //d.shuffle();
+
+    dealHand(d, p1, numCards);
+    dealHand(d, p2, numCards);
 
 
+    cout << p1.getHandSize() << endl << p2.getHandSize() <<endl;
 
+    cout << p1.getName() <<" has : " <<endl << p1.showHand() << endl;
+    cout << p2.getName() <<" has : " <<endl << p2.showHand() << endl;
 
+    Card c5(3, Card::spades);
+    p1.removeCardFromHand(c5);
+    cout << p1.showHand() <<endl;
 
-
-
-    return 0;
+    return EXIT_SUCCESS;
 }
+
+
+
+void dealHand(Deck &d, Player &p, int numCards)
+{
+    for (int i=0; i < numCards; i++)
+        p.addCard(d.dealCard());
+}
+
+
+
+
+
+
 
 /*
 

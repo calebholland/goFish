@@ -18,14 +18,14 @@
 
     string Card::toString() const{
         string both;
-        both = rankString(getRank()) + suitString(getSuit());
+        both = rankString(getRank()) + suitString(mySuit);
         return both;
 
     } // return string version e.g. Ac 4h Js
 
-    Card::Suit Card::getSuit() const {
-        return(mySuit);
-    }
+    //Card::Suit Card::getSuit() const {
+    //    return(mySuit);
+    //}
 
     bool Card::sameSuitAs(const Card& c) const{
         return( c.mySuit == mySuit);
@@ -36,24 +36,19 @@
     }// return rank, 1..13
 
     string Card::suitString(Suit s) const{
-        if(s == spades){
-            return "s";
+        switch(s){
+            case spades: return "s";
+            case hearts: return "h";
+            case diamonds: return "d";
+            case clubs: return "c";
+            default: break;
         }
-        else if(s == hearts){
-            return "h";
-        }
-        else if(s == diamonds){
-            return "d";
-        }
-        else if(s == clubs){
-            return "c";
-        }
-        else{
-            return "-1";
-        }
+
+
     } // return "s", "h",...
 
     string Card::rankString(int r) const{
+
         if(r == 1){
             return "A";
         }

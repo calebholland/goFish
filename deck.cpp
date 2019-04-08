@@ -9,20 +9,30 @@
 using namespace std;
 
     Deck::Deck(){
-        for(int i=0; i<13; i++){
-            for(int j=0; j<4; j++){
-                if(j == 0){
-                    myCards[(i*4) + j] = Card(i+1, Card::spades);
+        for(int i=0; i<4; i++){
+            for(int j=0; j<13; j++){
+                switch(i){
+                    case 0: myCards[(i*13) + j] = Card(j+1, Card::spades); break;
+                    case 1: myCards[(i*13) + j] = Card(j+1, Card::hearts); break;
+                    case 2: myCards[(i*13) + j] = Card(j+1, Card::diamonds); break;
+                    case 3: myCards[(i*13) + j] = Card(j+1, Card::clubs); break;
                 }
-                else if(j == 1){
-                    myCards[(i*4) + j] = Card(i+1, Card::hearts);
+
+
+                /*
+                if(i == 0){
+                    myCards[(i*13) + j] = Card(j+1, Card::spades);
                 }
-                else if(j == 2){
-                    myCards[(i*4) + j] = Card(i+1, Card::diamonds);
+                else if(i == 1){
+                    myCards[(i*13) + j] = Card(j+1, Card::hearts);
                 }
-                else if(j == 3){
-                    myCards[(i*4) + j] = Card(i+1, Card::clubs);
+                else if(i == 2){
+                    myCards[(i*13) + j] = Card(j+1, Card::diamonds);
                 }
+                else if(i == 3){
+                    myCards[(i*13) + j] = Card(j+1, Card::clubs);
+                }
+                 */
             }
         }
         myIndex = 0;
