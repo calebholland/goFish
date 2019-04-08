@@ -27,6 +27,16 @@ int main() {
         Card tempCard = testDeck.dealCard();
         cout << tempCard.toString() <<endl;
     }
+    cout<<endl<<endl <<"Shuffled Deck: " <<endl;
+    Deck testDeck2 = Deck();
+    testDeck2.shuffle();
+    for(int i=0; i<54; i++) {
+        Card tempCard = testDeck2.dealCard();
+        cout << tempCard.toString() << endl;
+        cout << "Cards left: " << testDeck2.size() <<endl;
+    }
+
+
 
 
 
