@@ -8,6 +8,33 @@ using namespace std;
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
+
+    Card c1;
+    cout << c1.toString() << endl;
+
+    Card c2(4, Card::clubs);
+    cout << c2.toString() << endl;
+
+    Card c3(4, Card::clubs);
+    cout << c2.toString() << endl;
+
+    cout << "Are card c2 and c3 the same? (want 1): " << (c2 == c3) << endl;
+    cout << "Are card c1 and c3 the same? (want 0): " << (c1 == c3) << endl;
+
+    cout << "Brand new deck: " <<endl;
+    Deck testDeck = Deck();
+    for(int i=0; i<52; i++){
+        Card tempCard = testDeck.dealCard();
+        cout << tempCard.toString() <<endl;
+    }
+
+
+
+
+
+
+
+
     return 0;
 }
 

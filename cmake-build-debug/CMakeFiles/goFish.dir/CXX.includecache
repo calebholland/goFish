@@ -6,19 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/caleb/Documents/EE312/goFish/card.cpp
-card.h
-/home/caleb/Documents/EE312/goFish/card.h
-
 /home/caleb/Documents/EE312/goFish/card.h
 iostream
 -
 string
 -
-
-/home/caleb/Documents/EE312/goFish/deck.cpp
-deck.h
-/home/caleb/Documents/EE312/goFish/deck.h
 
 /home/caleb/Documents/EE312/goFish/deck.h
 card.h
@@ -35,10 +27,6 @@ player.h
 /home/caleb/Documents/EE312/goFish/player.h
 deck.h
 /home/caleb/Documents/EE312/goFish/deck.h
-
-/home/caleb/Documents/EE312/goFish/player.cpp
-player.h
-/home/caleb/Documents/EE312/goFish/player.h
 
 /home/caleb/Documents/EE312/goFish/player.h
 iostream
