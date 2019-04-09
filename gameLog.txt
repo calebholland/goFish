@@ -1,0 +1,153 @@
+Amy: 8c Js Qh Kd 8s 9d Kc 
+Ned: 5c 10s 8h 5d 2c 4c Ad 
+Amy: Ned, got any 9s?
+Ned: Go Fish
+Amy: Hand: Js Qh 9d 6c  Book: 8c 8s Kd Kc 
+Ned: Amy, got any As?
+Amy: Go Fish
+Ned: Hand: 10s 8h 2c 4c Ad Ks  Book: 5c 5d 
+Amy: Ned, got any 6s?
+Ned: Go Fish
+Amy: Hand: Js Qh 9d 6c Ah  Book: 8c 8s Kd Kc 
+Ned: Amy, got any 10s?
+Amy: Go Fish
+Ned: Hand: 10s 8h 2c 4c Ad Ks 7h  Book: 5c 5d 
+Amy: Ned, got any Js?
+Ned: Go Fish
+Amy: Hand: Js Qh 9d 6c Ah 9h  Book: 8c 8s Kd Kc 
+Ned: Amy, got any As?
+Amy: Yes. Here is Ah
+Ned: Amy, got any 2s?
+Amy: Go Fish
+Ned: Hand: 10s 8h 2c 4c Ks 7h 6h  Book: 5c 5d Ad Ah 
+Amy: Ned, got any 6s?
+Ned: Yes. Here is 6h
+Amy: Ned, got any Qs?
+Ned: Go Fish
+Amy: Hand: Js Qh 7d  Book: 8c 8s Kd Kc 9d 9h 6c 6h 
+Ned: Amy, got any 4s?
+Amy: Go Fish
+Ned: Hand: 10s 8h 2c 4c Ks 7h 6s  Book: 5c 5d Ad Ah 
+Amy: Ned, got any Qs?
+Ned: Go Fish
+Amy: Hand: Js Qh 7d 9c  Book: 8c 8s Kd Kc 9d 9h 6c 6h 
+Ned: Amy, got any 6s?
+Amy: Go Fish
+Ned: Hand: 10s 8h 2c 4c Ks 7h 6s As  Book: 5c 5d Ad Ah 
+Amy: Ned, got any Qs?
+Ned: Go Fish
+Amy: Hand: Js Qh 7d 9c 7c  Book: 8c 8s Kd Kc 9d 9h 6c 6h 
+Ned: Amy, got any 2s?
+Amy: Go Fish
+Ned: Hand: 10s 8h 2c 4c Ks 7h 6s As 10h  Book: 5c 5d Ad Ah 
+Amy: Ned, got any Qs?
+Ned: Go Fish
+Amy: Hand: Js Qh 9c Qc  Book: 8c 8s Kd Kc 9d 9h 6c 6h 7d 7c 
+Ned: Amy, got any 7s?
+Amy: Go Fish
+Ned: Hand: 8h 2c 4c Ks 7h 6s As 2s  Book: 5c 5d Ad Ah 10s 10h 
+Amy: Ned, got any Js?
+Ned: Go Fish
+Amy: Hand: Js 9c 4d  Book: 8c 8s Kd Kc 9d 9h 6c 6h 7d 7c Qh Qc 
+Ned: Amy, got any 4s?
+Amy: Yes. Here is 4d
+Ned: Amy, got any Ks?
+Amy: Go Fish
+Ned: Hand: 8h Ks 7h 6s As 2h  Book: 5c 5d Ad Ah 10s 10h 2c 2s 4c 4d 
+Amy: Ned, got any Js?
+Ned: Go Fish
+Amy: Hand: Js 9c 6d  Book: 8c 8s Kd Kc 9d 9h 6c 6h 7d 7c Qh Qc 
+Ned: Amy, got any 2s?
+Amy: Go Fish
+Ned: Hand: 8h Ks 7h 6s As 2h 2d  Book: 5c 5d Ad Ah 10s 10h 2c 2s 4c 4d 
+Amy: Ned, got any 6s?
+Ned: Yes. Here is 6s
+Amy: Ned, got any Js?
+Ned: Go Fish
+Amy: Hand: Js 9c 4s  Book: 8c 8s Kd Kc 9d 9h 6c 6h 7d 7c Qh Qc 6d 6s 
+Ned: Amy, got any 7s?
+Amy: Go Fish
+Ned: Hand: 8h Ks 7h As 3c  Book: 5c 5d Ad Ah 10s 10h 2c 2s 4c 4d 2h 2d 
+Amy: Ned, got any Js?
+Ned: Go Fish
+Amy: Hand: Js 9c 4s 10c  Book: 8c 8s Kd Kc 9d 9h 6c 6h 7d 7c Qh Qc 6d 6s 
+Ned: Amy, got any 3s?
+Amy: Go Fish
+Ned: Hand: 8h Ks 7h As 3c Jh  Book: 5c 5d Ad Ah 10s 10h 2c 2s 4c 4d 2h 2d 
+Amy: Ned, got any 9s?
+Ned: Go Fish
+Amy: Hand: Js 9c 4s 10c 9s  Book: 8c 8s Kd Kc 9d 9h 6c 6h 7d 7c Qh Qc 6d 6s 
+Ned: Amy, got any As?
+Amy: Go Fish
+Ned: Hand: 8h Ks 7h As 3c Jh Jc  Book: 5c 5d Ad Ah 10s 10h 2c 2s 4c 4d 2h 2d 
+Amy: Ned, got any 4s?
+Ned: Go Fish
+Amy: Hand: Js 4s 10c Ac  Book: 8c 8s Kd Kc 9d 9h 6c 6h 7d 7c Qh Qc 6d 6s 9c 9s 
+Ned: Amy, got any 7s?
+Amy: Go Fish
+Ned: Hand: 8h Ks 7h As 3c Qs  Book: 5c 5d Ad Ah 10s 10h 2c 2s 4c 4d 2h 2d Jh Jc 
+Amy: Ned, got any As?
+Ned: Yes. Here is As
+Amy: Ned, got any 10s?
+Ned: Go Fish
+Amy: Hand: Js 4s 10c 3s  Book: 8c 8s Kd Kc 9d 9h 6c 6h 7d 7c Qh Qc 6d 6s 9c 9s Ac As 
+Ned: Amy, got any 3s?
+Amy: Yes. Here is 3s
+Ned: Amy, got any 7s?
+Amy: Go Fish
+Ned: Hand: 8h Ks 7h Qs 5s  Book: 5c 5d Ad Ah 10s 10h 2c 2s 4c 4d 2h 2d Jh Jc 3c 3s 
+Amy: Ned, got any Js?
+Ned: Go Fish
+Amy: Hand: Js 4s 10c 8d  Book: 8c 8s Kd Kc 9d 9h 6c 6h 7d 7c Qh Qc 6d 6s 9c 9s Ac As 
+Ned: Amy, got any Qs?
+Amy: Go Fish
+Ned: Hand: 8h Ks 7h Qs 5s 4h  Book: 5c 5d Ad Ah 10s 10h 2c 2s 4c 4d 2h 2d Jh Jc 3c 3s 
+Amy: Ned, got any Js?
+Ned: Go Fish
+Amy: Hand: Js 4s 10c 8d 7s  Book: 8c 8s Kd Kc 9d 9h 6c 6h 7d 7c Qh Qc 6d 6s 9c 9s Ac As 
+Ned: Amy, got any Qs?
+Amy: Go Fish
+Ned: Hand: 8h Ks 7h Qs 5s 4h 3d  Book: 5c 5d Ad Ah 10s 10h 2c 2s 4c 4d 2h 2d Jh Jc 3c 3s 
+Amy: Ned, got any Js?
+Ned: Go Fish
+Amy: Hand: Js 4s 10c 8d 7s Qd  Book: 8c 8s Kd Kc 9d 9h 6c 6h 7d 7c Qh Qc 6d 6s 9c 9s Ac As 
+Ned: Amy, got any 4s?
+Amy: Yes. Here is 4s
+Ned: Amy, got any 8s?
+Amy: Yes. Here is 8d
+Ned: Amy, got any Ks?
+Amy: Go Fish
+Ned: Hand: Ks 7h Qs 5s 3d Jd  Book: 5c 5d Ad Ah 10s 10h 2c 2s 4c 4d 2h 2d Jh Jc 3c 3s 4h 4s 8h 8d 
+Amy: Ned, got any Qs?
+Ned: Yes. Here is Qs
+Amy: Ned, got any Js?
+Ned: Yes. Here is Jd
+Amy: Ned, got any 7s?
+Ned: Yes. Here is 7h
+Amy: Ned, got any 10s?
+Ned: Go Fish
+Amy: Hand: 10c Kh  Book: 8c 8s Kd Kc 9d 9h 6c 6h 7d 7c Qh Qc 6d 6s 9c 9s Ac As Qd Qs Js Jd 7s 7h 
+Ned: Amy, got any 3s?
+Amy: Go Fish
+Ned: Hand: Ks 5s 3d 10d  Book: 5c 5d Ad Ah 10s 10h 2c 2s 4c 4d 2h 2d Jh Jc 3c 3s 4h 4s 8h 8d 
+Amy: Ned, got any 10s?
+Ned: Yes. Here is 10d
+Amy: Ned, got any Ks?
+Ned: Yes. Here is Ks
+Amy: I'm fishing
+Amy: Hand: 5h  Book: 8c 8s Kd Kc 9d 9h 6c 6h 7d 7c Qh Qc 6d 6s 9c 9s Ac As Qd Qs Js Jd 7s 7h 10c 10d Kh Ks 
+Ned: Amy, got any 5s?
+Amy: Yes. Here is 5h
+Ned: Amy, got any 3s?
+Amy: Go Fish
+Ned: Hand: 3d 3h  Book: 5c 5d Ad Ah 10s 10h 2c 2s 4c 4d 2h 2d Jh Jc 3c 3s 4h 4s 8h 8d 5s 5h 
+Amy: I'm fishing
+Amy: Hand:  Book: 8c 8s Kd Kc 9d 9h 6c 6h 7d 7c Qh Qc 6d 6s 9c 9s Ac As Qd Qs Js Jd 7s 7h 10c 10d Kh Ks 
+Ned: I'm fishing
+Ned: Hand:  Book: 5c 5d Ad Ah 10s 10h 2c 2s 4c 4d 2h 2d Jh Jc 3c 3s 4h 4s 8h 8d 5s 5h 3d 3h 
+Amy's book size: 28
+8c 8s Kd Kc 9d 9h 6c 6h 7d 7c Qh Qc 6d 6s 9c 9s Ac As Qd Qs Js Jd 7s 7h 10c 10d Kh Ks 
+Ned's book size: 24
+5c 5d Ad Ah 10s 10h 2c 2s 4c 4d 2h 2d Jh Jc 3c 3s 4h 4s 8h 8d 5s 5h 3d 3h 
+
+Amy wins!

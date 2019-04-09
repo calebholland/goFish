@@ -89,12 +89,8 @@ using namespace std;
     string Player::showHand() const{
         string sHand;
         for(vector<Card>::const_iterator it = myHand.begin(); it < myHand.end(); it++) {
-            //cout << (*it).toString() <<endl;
             sHand += (*it).toString() + " ";
         }
-        //for(int i = 0; i < Player::getHandSize(); i++){
-        //    cout << myHand[i].toString() <<endl;
-        //}
         return sHand;
 
     }

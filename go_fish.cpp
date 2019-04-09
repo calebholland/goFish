@@ -3,18 +3,22 @@
 #include "card.h"
 #include "player.h"
 #include "deck.h"
+#include <fstream>
 
 #define HAND_SIZE 7
 
 using namespace std;
 
 void dealHand(Deck &d, Player &p, int numCards);
-void pl1Turn(Player &pl1, Player &pl2, Deck &deck);
-void pl2Turn(Player &pl1, Player &pl2, Deck &deck);
+void pl1Turn(Player &pl1, Player &pl2, Deck &deck, std::ofstream &gameLog);
+void pl2Turn(Player &pl1, Player &pl2, Deck &deck, std::ofstream &gameLog);
 void test2();
 
 int main() {
     //test2();
+
+    ofstream gameLog("gameLog.txt");
+    //logFile.open"(gameLog.txt");
 
     Player pl1("Amy");
     Player pl2("Ned");
@@ -24,17 +28,28 @@ int main() {
     dealHand(deck, pl1, HAND_SIZE);
     dealHand(deck, pl2, HAND_SIZE);
 
-    cout << pl1.getName() << ": " << pl1.showHand() << endl << pl2.getName() << ": " << pl2.showHand() << endl;
+    gameLog << pl1.getName() << ": " << pl1.showHand() << endl << pl2.getName() << ": " << pl2.showHand() << endl;
 
     //while(deck.size() != 0){
     while(pl1.getBookSize() + pl2.getBookSize() < 52){
-        pl1Turn(pl1, pl2, deck);
-        pl2Turn(pl1, pl2, deck);
+        pl1Turn(pl1, pl2, deck, gameLog);
+        gameLog << pl1.getName() << ": Hand: " << pl1.showHand() << " Book: " << pl1.showBooks() <<endl;
+        pl2Turn(pl1, pl2, deck, gameLog);
+        gameLog << pl2.getName() << ": Hand: " << pl2.showHand() << " Book: " << pl2.showBooks() <<endl;
     }
 
-    cout << pl1.getName() << "book size: " << pl1.getBookSize() << endl  << pl1.showBooks() << endl;
-    cout << pl2.getName() << "books size: " << pl2.getBookSize() << endl << pl2.showBooks() << endl;
+    gameLog << pl1.getName() << "'s book size: " << pl1.getBookSize() << endl  << pl1.showBooks() << endl;
+    gameLog << pl2.getName() << "'s book size: " << pl2.getBookSize() << endl << pl2.showBooks() << endl<<endl;
 
+    if(pl1.getBookSize() > pl2.getBookSize()){
+        gameLog << pl1.getName() << " wins!" <<endl;
+    }
+    else if(pl2.getBookSize() > pl1.getBookSize()) {
+        gameLog << pl2.getName() << " wins!" << endl;
+    }
+    else if(pl2.getBookSize() == pl1.getBookSize()) {
+        gameLog << "Tie!" << endl;
+    }
 
 
 
@@ -44,7 +59,7 @@ int main() {
     return EXIT_SUCCESS;
 }
 
-void pl1Turn(Player &pl1, Player &pl2, Deck &deck){
+void pl1Turn(Player &pl1, Player &pl2, Deck &deck, std::ofstream &gameLog){
     Card book1;
     Card book2;
     Card roundCard;
@@ -55,38 +70,39 @@ void pl1Turn(Player &pl1, Player &pl2, Deck &deck){
         pl2.bookCards(book1, book2);
     }
     if(pl1.getHandSize() != 0) {
-        cout << pl1.getName() << ": " << pl2.getName() << ", got any ";
+        gameLog << pl1.getName() << ": " << pl2.getName() << ", got any ";
         roundCard = pl1.chooseCardFromHand();
-        cout << roundCard.rankString(roundCard.getRank()) << "s?" << endl;
+        gameLog << roundCard.rankString(roundCard.getRank()) << "s?" << endl;
 
-        cout << pl2.getName() << ": ";
+        gameLog << pl2.getName() << ": ";
         if (pl2.rankInHand(roundCard)) {
-            cout << "Yes. Here is ";
+            gameLog << "Yes. Here is ";
             Card takenCard = pl2.rankedRemove(roundCard);
             pl1.addCard(takenCard);
-            cout << takenCard.toString() << endl;
+            gameLog << takenCard.toString() << endl;
             if(pl1.getBookSize() + pl2.getBookSize() < 52){
-                pl1Turn(pl1, pl2, deck);
+                pl1Turn(pl1, pl2, deck, gameLog);
             }
             else{
                 return;
             }
         }
         else {
-            cout << "Go Fish" << endl;
+            gameLog << "Go Fish" << endl;
             if(deck.size() != 0){
                 pl1.addCard(deck.dealCard());
             }
         }
     }
     else{
-        cout << pl1.getName() << ": I'm fishing" <<endl;
+        gameLog << pl1.getName() << ": I'm fishing" <<endl;
         if(deck.size() != 0){
             pl1.addCard(deck.dealCard());
         }
     }
 }
-void pl2Turn(Player &pl1, Player &pl2, Deck &deck){
+
+void pl2Turn(Player &pl1, Player &pl2, Deck &deck, std::ofstream &gameLog){
     Card book1;
     Card book2;
     Card roundCard;
@@ -97,32 +113,32 @@ void pl2Turn(Player &pl1, Player &pl2, Deck &deck){
         pl2.bookCards(book1, book2);
     }
     if(pl2.getHandSize() != 0) {
-        cout << pl2.getName() << ": " << pl1.getName() << ", got any ";
+        gameLog << pl2.getName() << ": " << pl1.getName() << ", got any ";
         roundCard = pl2.chooseCardFromHand();
-        cout << roundCard.rankString(roundCard.getRank()) << "s?" << endl;
+        gameLog << roundCard.rankString(roundCard.getRank()) << "s?" << endl;
 
-        cout << pl1.getName() << ": ";
+        gameLog << pl1.getName() << ": ";
         if (pl1.rankInHand(roundCard)) {
-            cout << "Yes. Here is ";
+            gameLog << "Yes. Here is ";
             Card takenCard = pl1.rankedRemove(roundCard);
             pl2.addCard(takenCard);
-            cout << takenCard.toString() << endl;
+            gameLog << takenCard.toString() << endl;
             if(pl1.getBookSize() + pl2.getBookSize() < 52){
-                pl2Turn(pl1, pl2, deck);
+                pl2Turn(pl1, pl2, deck, gameLog);
             }
             else{
                 return;
             }
         }
         else {
-            cout << "Go Fish" << endl;
+            gameLog << "Go Fish" << endl;
             if(deck.size() != 0){
                 pl2.addCard(deck.dealCard());
             }
         }
     }
     else {
-        cout << pl2.getName() << ": I'm fishing" << endl;
+        gameLog << pl2.getName() << ": I'm fishing" << endl;
         if(deck.size() != 0){
             pl2.addCard(deck.dealCard());
         }
