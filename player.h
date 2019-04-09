@@ -65,6 +65,7 @@ public:
 
     //Remove the card c from the hand and return it to the caller
     Card removeCardFromHand(Card c);
+    Card rankedRemove(Card c);
 
     string showHand() const;
     string showBooks() const;
@@ -84,7 +85,7 @@ public:
     //Does the player have a card with the same rank as c in her hand?
     //e.g. will return true if the player has a 7d and the parameter is 7c
 
-    //bool sameRankInHand(Card c) const;
+    bool sameRankInHand(Card c) const;
 
 
 private:

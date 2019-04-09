@@ -83,6 +83,7 @@ using namespace std;
                 myHand.erase(it);
             }
         }
+        return c;
     }
 
     string Player::showHand() const{
@@ -127,6 +128,24 @@ using namespace std;
     //Does the player have a card with the same rank as c in her hand?
     //e.g. will return true if the player has a 7d and the parameter is 7c
     //
-    //bool Player::sameRankInHand(Card c) const{
-    //
-    //}
+    bool Player::sameRankInHand(Card c) const{
+        for(vector<Card>::const_iterator it = myHand.begin(); it < myHand.end(); it++) {
+            if( (*it).getRank() == c.getRank()){
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+    //Remove a card of c's rank from the hand and return it to the caller
+    Card Player::rankedRemove(Card c) {
+        Card rankMatch;
+        for (vector<Card>::const_iterator it = myHand.begin(); it < myHand.end(); it++) {
+            if ((*it).getRank() == c.getRank()) {
+                rankMatch = (*it);
+                myHand.erase(it);
+            }
+        }
+        return rankMatch;
+}
