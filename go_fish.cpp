@@ -31,7 +31,7 @@ int main() {
     gameLog << pl1.getName() << ": " << pl1.showHand() << endl << pl2.getName() << ": " << pl2.showHand() << endl;
 
     //while(deck.size() != 0){
-    while(pl1.getBookSize() + pl2.getBookSize() < 52){
+    while(pl1.getBookSize() + pl2.getBookSize() < 26){
         pl1Turn(pl1, pl2, deck, gameLog);
         gameLog << pl1.getName() << ": Hand: " << pl1.showHand() << " Book: " << pl1.showBooks() <<endl;
         pl2Turn(pl1, pl2, deck, gameLog);

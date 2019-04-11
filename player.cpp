@@ -107,7 +107,7 @@ using namespace std;
         return myHand.size();
     }
     int Player::getBookSize() const{
-        return myBook.size();
+        return myBook.size()/2;
     }
 
     //OPTIONAL

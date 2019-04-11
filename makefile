@@ -1,33 +1,10 @@
-# Project: gofish
-# Makefile created by Dev-C++ 4.9.9.2
-# Modified by jwebb
-
-CPP  = g++
-RES  =
-OBJ  = card.o deck.o go_fish.o player.o $(RES)
-LINKOBJ  = card.o deck.o go_fish.o player.o $(RES)
-BIN  = gofish
-CXXFLAGS = $(CXXINCS)
-CFLAGS = $(INCS)
-RM = rm -f
-
-
-all: gofish
-
-clean:
-	${RM} $(OBJ) $(BIN)
-
-$(BIN): $(OBJ)
-	$(CPP) $(LINKOBJ) -o gofish $(LIBS)
-
-card.o: card.cpp
-	$(CPP) -c card.cpp -o card.o $(CXXFLAGS)
-
-deck.o: deck.cpp
-	$(CPP) -c deck.cpp -o deck.o $(CXXFLAGS)
-
-go_fish.o: go_fish.cpp
-	$(CPP) -c go_fish.cpp -o go_fish.o $(CXXFLAGS)
-
-player.o: player.cpp
-	$(CPP) -c player.cpp -o player.o $(CXXFLAGS)
+final: go_fish.o card.o deck.o player.o
+	g++ -std=c++11 -o gofish go_fish.o card.o deck.o player.o
+driver: go_fish.cpp card.h
+	g++ -o go_fish.o -c -std=c++11 go_fish.cpp
+card.o: card.cpp card.h
+	g++ -o card.o -c -std=c++11 card.cpp
+deck.o: deck.cpp deck.h
+	g++ -o deck.o -c -std=c++11 deck.cpp
+player.o: player.cpp player.h
+	g++ -o player.o -c -std=c++11 player.cpp
